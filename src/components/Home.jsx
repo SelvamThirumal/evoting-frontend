@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import voteVideo from "../assets/vote.mp4";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import HumanGuide from "../components/HumanGuide";
 
 export default function Home(){
 
@@ -137,6 +138,7 @@ export default function Home(){
 
       {/* THREE BACKGROUND */}
       <div ref={bgRef} className="absolute inset-0 z-0"/>
+      <HumanGuide />
 
       {/* VIDEO */}
       <video
